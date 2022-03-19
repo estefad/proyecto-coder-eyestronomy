@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../styles/styles.css">
+    <title>eyestronomy</title>
+</head>
+<body>
+    
+    <header>   
+        <div class="titulo">
+            <a href="../../index.html"><img class="titulo titulo__logo" src="../multimedia/logo.png" alt="Logo Eyestronomy" width="100px" height="100px"></a>
+            <h1 class=" titulo titulo__titulo">EYESTRONOMY</h1>
+            
+            <p class="titulo titulo__parrafo">"Equipado con sus cinco sentidos, el Hombre explora el Universo <br/>que lo rodea y a sus aventuras las llama Ciencia." Edwin Hubble</p>
+        </div>
+           
+        <nav>
+            <ul class="menu">
+                <li><a href="../../index.html">INICIO </a></li>
+                <li><a href="./ciencia.html">CIENCIA</a></li>
+                <li><a href="./galeria.html">GALERIA</a></li>
+                <li><a href="./nosotros.html">NOSOTROS</a></li>
+                <li><a href="./contacto.html">CONTACTO</a></li>
+            </ul>
+        </nav>   
+        <h2 class="con">Contacto</h2>
+    </header>
+    
+    <main>
+        <div class="contacto">
+            <p class="p">Contactanos para recibir toda la informacion</p>
+            
+            <form class="form" method="POST" enctype="multipart/form-data">
+                <label class="form form__label" for="username">Nombre</label>
+                <input class="form form__input" id="username" type="text" placeholder="Ingrese su nombre">
+                <br>
+                <label class="form form__label" for="email">Email</label>
+                <input class="form form__input" id="email" type="email" placeholder="Ingrese su direccion de email">
+                <br>
+                <select class="form form__select" name="estado-civil" id="estado">
+                    <option value="Casado">Casado/a</option>
+                    <option value="Soltero">Soltero/a</option>
+                    <option value="Viudo">Viudo/a</option>
+                    <option value="Otro">Otro</option>
+                </select>
+    
+                <label class="form form__label" for="comments">Comentarios</label>
+                <input class="form form__input" id="comments" type="text" placeholder="Dejenos sus comentarios y sugerencias para maximizar su experiencia">
+                <br>
+                <label class="form form__label" for="newsletter">Desea recibir nuestras Noticias?</label>
+                <input class="form form__input" type="radio" name="newsletter" id="" value="">
+                <br>
+                <button class="form form__button" type="submit">Enviar</button>
+                <button class="form form__button" type="reset">Limpiar Datos</button>
+            </form>
+            
+        </div>
+    </main>
+
+    <footer>
+        <div class="derechos">
+            <img class="derechos derechos__img" src="../multimedia/logo.png" width="80px" height="80px">
+            <p class="derechos derechos__p">Todos los Derechos Rreservados
+             <br>
+            Info a eyestronomy@correo.com</p> 
+        </div>
+        <div class="redes">
+            <h5 class="redes redes__titulo">SEGUINOS</h5>
+            <ul class="redes">
+                <li class="redes redes__li"><a href="http://www.facebook.com" target="blank"><img class="redes__li redes__li--img1" src="../multimedia/facebook logo png sin fondo (1).png" width="30px" height="30px" alt="facebook"></a></li>
+                <li class="redes redes__li"><a href="http://www.instagram.com" target="blank"><img class="redes__li redes__li--img2" src="../multimedia/ig.png" width="30px" height="30px" alt="instagram"></a></li>
+                <li class="redes redes__li"><a href="http://www.twitter.com" target="blank"><img class="redes__li redes__li--img3" src="../multimedia/twitt.png" width="30px" height="30px" alt="twitter"></a></li>
+            </ul>
+        </div>
+    </footer>
+</body>
+</html>

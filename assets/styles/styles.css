@@ -1,0 +1,332 @@
+@import url('https://fonts.googleapis.com/css2? family= Nanum+Gothic+Coding & display=swap');
+@import url('https://fonts.googleapis.com/css2? familia= EB+Garamond:ital@0;1 &family= Nanum+Gothic+Coding & display=swap');
+
+/*GENERALES*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    width: 100%;
+    background-image: url(https://www.wallpapertip.com/wmimgs/3-32659_best-jet-black-iphone-wallpaper-star-wallpaper-hd.jpg);
+    background-attachment: fixed;/* queda fija la img en pantalla*/
+    background-repeat:repeat-x; /* repite la img*/
+    background-size: contain; /* contiene la img sin estirar ni recortarla*/
+    display: inline-block; /* crea cajas que se comportan como bloques en linea*/
+    padding: 0.5rem;
+    min-height: 100vh; /* vh ocupa el 100% de altura de la ventana grafica*/
+}
+
+/*HEADER*/
+header{
+    background-color:rgb(36, 46, 48);
+    filter: opacity(70%);
+    border-radius: 10px 10px 10px 10px;
+    margin: auto;
+}
+.titulo{
+    display: inline-block;  
+    position:relative; /* como un elem esta posicionado en el doc*/
+}
+
+.titulo__logo{
+    border-radius: 100%;
+    margin: 30px 0px 0px 30px;
+    left: 80px;
+}
+
+.titulo__titulo{
+    color:white;
+    margin: 15px 0px 0px 15px;
+    font-family: monospace;
+    font-weight: lighter;
+    bottom: 40px;
+    left: 80px;
+}
+
+.titulo__parrafo{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 15px;
+    left: 270px;
+    bottom: 40px;
+}
+
+.menu li{
+    font-family: monospace;
+    list-style: none;
+    font-size: 12px;
+    display: inline-block;
+}
+
+.menu li a:hover{
+    color: rgb(111, 140, 146);
+}
+
+.menu a{
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+    display: block;
+    padding: 10px;
+    margin-left: 165px;
+    text-align: center;
+}
+
+/*MAIN*/
+main{
+    display: block;
+    position: relative;
+    margin: auto;
+}
+
+.intro p{
+    font-size: 15px;
+    font-family: 'Courier New', Courier, monospace;
+    color: antiquewhite;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.principal__img{
+    margin-top: 60px;
+    margin-left: 220px;
+}
+
+.principal__parrafo{
+    font-size: 15px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    text-align: justify;
+    margin-left: 190px;
+    margin-right: 190px;
+    margin-top: 15px;
+    letter-spacing: 1px;
+    line-height:inherit;
+}
+
+.principal__parrafo a{
+    text-decoration: none;
+    font-size: 13px;
+    color: white;
+    padding: 1px;
+    border-radius: 5px;
+    background-color: rgb(36, 46, 48);
+}
+
+.suscribe a{
+    display: inline-block;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: rgb(36, 46, 48);
+    filter: opacity(70%);
+    margin: 110px 0px 110px 500px;
+}
+
+/*FOOTER*/
+footer{
+    background-color:rgb(36, 46, 48);
+    border-radius: 10px 10px 10px 10px;
+    filter: opacity(70%);
+    margin: auto;
+}
+
+.derechos{
+    display: inline-block;  
+    position:relative;
+}
+
+.derechos__img{
+    border-radius: 100%;
+    margin: 30px 0px 0px 30px;
+    left: 150px;
+    bottom: 12px;
+}
+
+.derechos__p{
+    color:white;
+    margin: 15px 0px 0px 15px;
+    font-family: monospace;
+    font-weight: lighter;
+    bottom: 40px;
+    left: 150px;
+}
+
+.redes{
+    display: inline-block;
+    position: relative;
+   
+}
+
+.redes__titulo{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+    color: white;
+    left: 510px;
+    bottom: 40px;
+}
+
+.redes .redes__li--img1{
+    text-decoration: none;
+    margin: 0px 10px 30px 540px;
+}
+
+.redes .redes__li--img2{
+    text-decoration: none;
+    margin: 0px 10px 30px 10px;
+}
+
+.redes .redes__li--img3{
+    text-decoration: none;
+    margin: 0px 10px 30px 10px;
+}
+
+/*NOSOTROS*/
+.nos{
+    text-align: left;
+    color: white;
+    font-family: monospace;
+}
+
+.nosotros{
+    display: block;
+    position: relative;
+    margin: auto;
+}
+
+.nosotros__art{
+    text-align: center;
+    color: white;
+}
+
+.nosotros__titulo{
+    font-family: monospace;
+    margin-top: 30px;
+}
+
+.nosotros__parrafo{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 30px;
+}
+
+/*CIENCIA*/
+.cien{
+    text-align: left;
+    color: white;
+    font-family: monospace;
+}
+
+/*GALERIA*/
+.gal{
+    text-align: left;
+    color: white;
+    font-family: monospace;
+}
+
+/*CONTACTO*/
+.contacto{
+    display: inline-block;
+}
+
+.con{
+    text-align: left;
+    color: white;
+    font-family: monospace;
+}
+
+.p{
+    font-size: 20px;
+    font-family: monospace;
+    color:white;
+    text-align: center;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    margin-left: 425px;
+}
+
+.form{
+    font-size: 10px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color: white;
+    margin-top: 2rem; /*rem para calcular en base a las cajas de input, segun el font-size*/
+}
+
+.form__input{
+    padding: 5px;
+    border-radius: 10px;
+    border: 1px solid rgb(36, 46, 48);
+    width: 20%;
+    height: 20%;
+    margin-bottom: .3rem;
+}
+
+/*GLOSARIO*/
+.glo{
+    text-align: left;
+    color: white;
+    font-family: monospace;
+}
+
+.tabla{
+    position: relative;
+    margin: auto;
+    border-radius: 10px;
+    border-spacing: 20px; /*espaciado entre las celdas*/
+    color: rgb(111, 140, 146);
+    margin-top: 30px;
+    margin-bottom: 30px;
+}
+
+.tabla__th{
+    text-align: left;
+    color: white;
+    font-family: monospace;
+    font-size: 18px;
+}
+
+.tabla__td{
+    text-align: left;
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+/*
+submenu 1-hacer lista de submenu
+
+.submenu{
+    position: absolute
+    width
+    display: none -me hace desaparecer los elem para que aparezcan en submenu
+}
+
+.menu li:hover .submenu{
+    display: block-cuando pases por el sub menu se ve en bloque
+}
+
+.submenu li a{
+    display: block
+    padding: 5px
+}
+
+
+
+.menu > li > a:hover{
+    color: que pase por el menu y lo pinte de otro color
+}
+*/
