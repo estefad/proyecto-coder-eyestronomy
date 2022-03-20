@@ -68,10 +68,6 @@ header{
     padding: 0 2rem;
 }
 
-.titulo{
-    color: var(--secondary);
-}
-
 .logo__img{
     border-radius: 100%;
     margin: 30px 0px 0px 30px;
@@ -81,6 +77,7 @@ header{
 .titulo{
     display: inline-block;  
     position:relative; /* como un elem esta posicionado en el doc*/
+    color: var(--secondary);
 }
 
 .titulo__titulo{
@@ -165,21 +162,26 @@ header{
     grid-template-areas: 
     "1 2"
     "3 4";
+    align-items: center;
 }
 .row__imagenes{
     width: 450px;
+    margin: 0px auto;
 }
 
 .imagenes__1{
     grid-area: "1";
+    top: 2rem;
+
 }
 
 .imagenes__2{
-    grid-area: "2";  
+    grid-area: "2"; 
+    top: 2rem; 
 }
 
 .imagenes__3{
-    grid-area: "3";  
+    grid-area: "3"; 
 }
 
 .imagenes__4{
@@ -297,6 +299,7 @@ footer{
     main{
         min-width: 320px;
     }
+
     .intro p{
         font-size: .8em;
         margin-top: 1rem;
@@ -310,11 +313,36 @@ footer{
     }
 
     .principal__parrafo{
-        display: block;
+        display:block;
         text-align: center;
         font-size: .5em;
-        margin: .2rem;
+        margin: 0;
     }
+
+    .row__imagenes{
+        width: 320px;
+    }
+    
+    .imagenes__1{
+        width: 150px;
+        height: 100px;
+    }
+    
+    .imagenes__2{
+        width: 150px;
+        height: 100px;
+    }
+    
+    .imagenes__3{
+        width: 120px;
+        height: 150px;    
+    }
+    
+    .imagenes__4{
+        width: 120px;
+        height: 180px;   
+    }
+    
 
     .suscribe a{
         justify-content: center;
