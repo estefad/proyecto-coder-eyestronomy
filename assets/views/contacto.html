@@ -32,31 +32,23 @@
      </header>
     
     <main>
+        <h2 class="p">CONTACTANOS PARA RECIBIR MAS INFORMACION</h2>
         <div class="contacto">
-            <p class="p">Contactanos para recibir toda la informacion</p>
-            
             <form class="form" method="POST" enctype="multipart/form-data">
-                <label class="form form__label" for="username">Nombre</label>
-                <input class="form form__input" id="username" type="text" placeholder="Ingrese su nombre">
+                <label class="form__label" for="username">Nombre</label>
+                <input class="form__input" id="username" type="text" placeholder="Ingrese su nombre">
                 <br>
-                <label class="form form__label" for="email">Email</label>
-                <input class="form form__input" id="email" type="email" placeholder="Ingrese su direccion de email">
+                <label class="form__label" for="email">Email</label>
+                <input class="form__input" id="email" type="email" placeholder="Ingrese su direccion de email">
                 <br>
-                <select class="form form__select" name="estado-civil" id="estado">
-                    <option value="Casado">Casado/a</option>
-                    <option value="Soltero">Soltero/a</option>
-                    <option value="Viudo">Viudo/a</option>
-                    <option value="Otro">Otro</option>
-                </select>
-    
-                <label class="form form__label" for="comments">Comentarios</label>
-                <input class="form form__input" id="comments" type="text" placeholder="Dejenos sus comentarios y sugerencias para maximizar su experiencia">
+                <textarea class="form__area" name="comments" id="comments" cols="30" rows="10" placeholder="Dejenos sus comentarios y sugerencias para maximizar su experiencia"></textarea>
+                
                 <br>
-                <label class="form form__label" for="newsletter">Desea recibir nuestras Noticias?</label>
-                <input class="form form__input" type="radio" name="newsletter" id="" value="">
+                <label class="form__label" for="newsletter">Desea recibir nuestras Noticias?</label>
+                <input class="form__input" type="radio" name="newsletter" id="newsletter">
                 <br>
-                <button class="form form__button" type="submit">Enviar</button>
-                <button class="form form__button" type="reset">Limpiar Datos</button>
+                <button class="form__button" type="submit">Enviar</button>
+                <button class="form__button" type="reset">Reset</button>
             </form>
             
         </div>
