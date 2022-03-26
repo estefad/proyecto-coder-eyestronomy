@@ -28,16 +28,22 @@ html{
 /*GENERALES*/
 
 body{
+    display: grid;
     min-width: 1200px;
-    display: flex;
-    min-height: 100vh;
+    height: 200vh;
     flex-direction: column;
     background-image: url(https://www.wallpapertip.com/wmimgs/3-32659_best-jet-black-iphone-wallpaper-star-wallpaper-hd.jpg);
     background-attachment: fixed;/* queda fija la img en pantalla*/
     background-repeat:repeat-x; /* repite la img*/
-    background-size: contain; /* contiene la img sin estirar ni recortarla*/
+    background-size:contain; /* contiene la img sin estirar ni recortarla*/
     object-fit: cover;
     margin: 0 auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: 30vh 1fr 20vh;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
 }
 
 ul{
@@ -111,10 +117,11 @@ header{
 .menu a{
     color: var(--secondary);
     padding: 1rem ;
-    margin-left: 10rem;
+    margin-left: 9rem;
 }
 
 /*MAIN*/
+
 
 .intro p{
     font-size: 1.5em;
@@ -201,7 +208,7 @@ header{
 footer{
     display: flex;
     flex-wrap: wrap;
-    gap: 20px;
+    gap: 15px;
     background-color:var(--principal);
     border-radius: 10px 10px 10px 10px;
     filter: opacity(70%);
@@ -209,7 +216,7 @@ footer{
 
 .foot__img{
     border-radius: 100%;
-    margin: 20px 50px 0px 180px;
+    margin: 5px 50px 0px 180px;
 }
 
 .derechos__p{
@@ -326,7 +333,7 @@ footer{
 }
 
 .nosotros__titulo{
-    font-family: var(--font-two);
+    font-family: var(--font-one);
     color: var(--secondary);
     margin: 2rem;
     text-align: center;
@@ -346,8 +353,9 @@ footer{
     body{
         display: grid;
         min-width: 320px;
+        height: 100vh;
         grid-template-columns: 1fr;
-        grid-template-rows: 30vh 1fr 30vh;
+        grid-template-rows: 30vh 1fr 20vh;
         grid-template-areas: 
         "header"
         "main"
@@ -557,4 +565,83 @@ footer{
         font-size: .9em;
         text-align: justify;
     }
+}
+
+
+/*BOOTSTRAP*/
+.navbar-light .navbar-brand {
+    color: var(--secondary);
+    margin-left: 7rem;
+}
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+    color: var(--secondary);
+}
+
+.bots #carouselExampleFade{
+    top: 10px;
+    height: 100vh;
+    justify-content: center;
+    left: 25%;
+}
+
+.slide img{
+    top: 30px;
+}
+
+.carousel-item img{
+    width: 50%;
+    height: 50%;
+}
+
+.galeria{
+    text-align: center;
+    margin: 3rem;
+    color: var(--secondary);
+    font-family: var(--font-three);
+}
+
+.form-control{
+    
+    border-radius: 5px;
+    background-color: var(--principal);
+    opacity: 70%;
+    border: 1px solid black;
+    padding: 1rem 1rem;
+}
+
+.form-boot{
+    display: block;
+    margin: 4rem auto;
+    width: 30%;
+    left: 10rem;
+}
+.form-label {
+    margin-bottom: 1rem;
+    color: var(--secondary);
+    font-family: var(--font-one);
+    font-size: 1.3em;
+    
+}
+.form-check-label{
+    color: var(--secondary);
+}
+.t {
+    font-family: var(--font-one);
+    color: var(--secondary);
+    margin: 2rem;
+    text-align: center;
+}
+
+.btn-primary {
+    color: #fff;
+    background-color: var(--principal);
+    border-color: var(--principal);
+}
+
+.menu li .boot{
+    display: block;
+    color: var(--secondary);
+    padding: 1rem;
+    margin-left: 2rem;
 }
