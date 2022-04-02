@@ -1,0 +1,84 @@
+/*BOOTSTRAP*/
+.navbar-light .navbar-brand {
+    color: $secondary;
+    margin-left: 4rem;
+}
+
+.navbar-nav {
+    flex-direction: row;
+    justify-content: center;
+}
+
+.navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
+    color: $secondary;
+    width: 20%;
+    
+}
+.navbar-collapse {
+    margin-left: .3rem;
+}
+
+.bots #carouselExampleFade{
+    top: 10px;
+    height: 70vh;
+    justify-content: center;
+    left: 25%;
+}
+.navbar-light .navbar-nav .nav-link {
+    color: $secondary;
+    margin: 0.2rem;
+}
+.navbar-light .navbar-brand {
+    font-size: 1.3rem;
+}
+
+.navbar-toggler {
+    margin-top: -2.5rem;
+}
+.slide img{
+    top: 30px;
+}
+
+.carousel-item img{
+    width: 50%;
+    height: 50%;
+}
+
+.galeria{
+    text-align: center;
+    margin: 3rem;
+    color: $secondary;
+    font-family: $font-three;
+}
+
+.form-control{
+    
+    border-radius: 5px;
+    background-color: $principal;
+    opacity: 70%;
+    border: 1px solid black;
+    padding: 1rem 1rem;
+}
+
+.form-boot {
+    display: block;
+    margin: 4rem auto;
+    width: 50%;
+    left: 10rem;
+}
+.form-label {
+    margin-bottom: 1rem;
+    color: $secondary;
+    font-family: $font-one;
+    font-size: 1.3em;
+    
+}
+.form-check-label{
+    color: $secondary;
+}
+.t {
+    font-family: $font-one;
+    color: $secondary;
+    margin: 2rem;
+    text-align: center;
+}

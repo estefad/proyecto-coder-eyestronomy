@@ -1,0 +1,54 @@
+/*HEADER*/
+header {
+  background-color: $principal;
+  opacity: 70%;
+  border-radius: 10px 10px 10px 10px;
+  padding: 0 2rem;
+  
+
+  .logo__img {
+    border-radius: 100%;
+    margin: 30px 0px 0px 30px;
+    left: 80px;
+  }
+
+  .titulo {
+    display: inline-block;
+    position: relative; /* como un elem esta posicionado en el doc*/
+    color: $secondary;
+
+    &__titulo {
+      margin: 15px 0px 0px 15px;
+      font-family: $font-one;
+      font-weight: lighter;
+      bottom: -2rem; /*aprox 40px*/
+      left: 6rem; /*aprox 80px*/
+    }
+
+    &__parrafo {
+      font-family: $font-two;
+      color: $secondary;
+      font-size: 0.9em;
+      left: 270px;
+      bottom: -2.5em;
+    }
+  }
+
+  .menu li {
+    font-size: 0.9em;
+    display: flex;
+    height: 30px;
+    align-items: center;
+    justify-content: space-between;
+    transition: color 1s;
+
+    & a:hover {
+      color: rgb(111, 140, 146);
+    }
+    & a {
+      color: $secondary;
+      padding: 1rem;
+      margin-left: 9rem;
+    }
+  }
+}

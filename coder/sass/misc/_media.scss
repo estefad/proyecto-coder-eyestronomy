@@ -1,0 +1,241 @@
+@media screen and (max-width: 480px) {
+
+    body{
+        display: grid;
+        min-width: 320px;
+        height: 100vh;
+        grid-template-columns: 1fr;
+        grid-template-rows: 30vh 1fr 20vh;
+        grid-template-areas: 
+        "header"
+        "main"
+        "footer";
+        padding: 0;
+
+        
+    /*HEADER*/
+    header{
+        min-width: 320px;
+        padding: 0 auto;
+        margin-bottom: -1rem;
+
+        .titulo{
+            display: flex;
+            align-items: center;
+    
+            &__parrafo{
+                display: none;
+        
+                
+            }
+            &__titulo{
+                font-size: 1.5rem;
+                bottom: -1rem; 
+                left: -1.2rem;
+            }
+        }
+    
+        
+    
+        #mobile{
+            display: flex;
+            justify-content: left;
+            right: 6rem;
+        }
+    
+        #responsive{
+            display: flex;
+            margin: 0;
+        }
+    
+        .flex-row li a{
+            flex-direction: row;
+            padding: 0;
+            margin: .5rem;
+            font-size: .8em;
+        }
+    }
+
+   
+   
+    /*MAIN*/
+    main{
+        min-width: 320px;
+
+        #intro-p{
+            margin-top: 4rem;
+        }
+    
+        .intro p{
+            font-size: .8em;
+            margin-top: 1rem;
+        }
+        
+        .imagen .principal__img{
+            width: 320px;
+            height: 160px;
+            left: 3rem;
+            padding: .3rem;
+        }
+    
+        .principal__parrafo{
+            display:block;
+            text-align: center;
+            font-size: .5em;
+            margin: 0;
+        }
+    
+        .row__imagenes{
+            width: 320px;
+
+            .imagenes__1{
+                width: 150px;
+                height: 100px;
+            }
+            
+            .imagenes__2{
+                width: 150px;
+                height: 100px;
+            }
+            
+            .imagenes__3{
+                width: 120px;
+                height: 150px;    
+            }
+            
+            .imagenes__4{
+                width: 120px;
+                height: 180px;   
+            }
+            
+        }
+        
+        
+    
+        .suscribe a{
+            justify-content: center;
+            padding: .8rem; 
+            margin: 2rem 7rem;
+            font-size: .5em;
+        }
+    
+    }
+
+   
+    /*FOOTER*/
+    
+    footer{
+        display: flex;
+        align-items: center;
+        flex-wrap: nowrap;
+        min-width: 320px;
+
+        .foot__img{
+            border-radius: 100%;
+            margin: 11px 58px 0px 49px;
+            width: 50px;
+            height: 50px;
+        }
+    
+        .derechos__p{
+            margin: 6px 35px 4px 41px;
+            font-size: .3em;
+        }
+    
+        .redes{
+            display: flex;
+            justify-content: center;
+
+            &__titulo{
+                font-size: .6em;
+                margin: 5px 0px 0px 10px;
+            }
+        
+            &__li--img1{
+                /* Arriba | Derecha | Abajo | Izquierda */
+                margin: 5px 0px 0px 10px;
+                width: 15px;
+                height:15px;
+            }
+        
+            &__li--img2{
+                margin: 5px 0px 0px 5px ;
+                width: 15px;
+                height:15px;
+            }
+            
+            .redes__li--img3{
+                margin: 5px 0px 0px 5px ;
+                width: 15px;
+                height:15px;
+            }
+        }
+        
+    
+    }
+
+    
+    /*FORM*/
+    
+    .contacto{
+        min-width: 200px;
+        margin: 1rem 3rem;
+    }
+    
+    .p{
+        margin: 1rem;
+        font-size: .9rem;
+    }
+    
+    .form input{
+        margin-bottom: 15px;
+        border-radius: 5px;
+    }
+    
+    .form__area{
+        margin-bottom: 15px;
+        border-radius: 5px;
+    }
+    
+    .form__label{
+        font-size: .9rem;
+        font-size: 10px;
+    }
+    
+    .form__button{
+        margin-bottom: 5rem;
+        border-radius: 5px;
+        padding: 0;
+        height: 9%;
+    }
+
+    /*GALERIA*/
+    .galeria img{
+        width: 200px;
+        height: 200px;
+    }
+    
+    .galeria img:hover{
+        width: 250px;
+        height: 150px;
+    }
+
+    /*NOSOTROS*/
+
+    .nosotros{
+        display: flex;
+        width: 80%;
+        margin-left: 2.5rem;
+    }
+    
+    .nosotros__titulo{
+        font-size: 1em;
+    }
+    .nosotros__parrafo{
+        font-size: .9em;
+        text-align: justify;
+    }
+    }
+
+    
+}

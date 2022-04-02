@@ -1,0 +1,26 @@
+/*GALERIA*/
+.galeria__titulo{
+    font-size: 1.5em;
+    font-family: var($font-one);
+    color: var($secondary);
+    text-align: center;
+    margin-top: 2rem;
+
+    & img{
+        object-fit: cover;
+        margin: 8px 8px 8px 8px;
+        position: relative;
+        transition: all 2s;
+    }
+    
+    & img:hover{
+        width: 430px;
+        height: 230px;
+    }
+}
+
+[title]{
+    font-family: var($font-two);
+    color: var($principal);
+    border-radius: 5px;
+}

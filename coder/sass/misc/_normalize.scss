@@ -1,0 +1,43 @@
+/*RESET-todas las etiquetas pueden recibir contenido antes o despues*/
+*,
+*::after,
+*::before{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62,5%;/*10px de base al html, y para pasar a em 1em o 24px= 2.4em*/
+    font-family: var($font-one);
+}
+
+/*GLOBALES*/
+
+body{
+    display: grid;
+    min-width: 1200px;
+    height: 200vh;
+    flex-direction: column;
+    background-image: url(https://www.wallpapertip.com/wmimgs/3-32659_best-jet-black-iphone-wallpaper-star-wallpaper-hd.jpg);
+    background-attachment: fixed;/* queda fija la img en pantalla*/
+    background-repeat:repeat; /* repite la img*/
+    background-size:contain; /* contiene la img sin estirar ni recortarla*/
+    object-fit: cover;
+    margin: 0 auto;
+    grid-template-columns: 1fr;
+    grid-template-rows: 30vh 1fr 20vh;
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer";
+}
+
+ul{
+    list-style-type: none;
+}
+
+li a{
+    text-decoration: none;
+    display: flex;
+}

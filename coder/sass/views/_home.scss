@@ -1,0 +1,86 @@
+/*MAIN*/
+main{
+    .intro p{
+        font-size: 1.5em;
+        font-family: $font-one;
+        color: $secondary;
+        text-align: center;
+        margin-top: 2rem;
+    }
+    
+    .imagen{
+        display: flex;
+        justify-content: center;
+        margin-top: 1rem;
+        padding: 1rem;
+    }
+    
+    .principal__parrafo{
+        text-align: justify;
+        font-size: .9em;
+        font-family: $font-three;
+        letter-spacing: 1px;
+        line-height:inherit;
+        margin-left: 9rem;
+        margin-right: 9rem;
+        color: $secondary;
+    
+        & a{
+            text-decoration: none;
+            font-size: .7em;
+            color: $secondary;
+            padding: .3rem;
+            border-radius: 1rem;
+            background-color: $principal;
+        }
+    }
+    
+
+    /*GRID IMAGENES*/
+    .row__imagenes{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-template-areas: 
+        "1 2"
+        "3 4";
+        align-items: center;
+    
+        &{
+            width: 450px;
+            margin: 0px auto;
+        }
+
+        .imagenes__1{
+            grid-area: "1";
+            top: 2rem;
+        }
+        
+        .imagenes__2{
+            grid-area: "2"; 
+            top: 2rem; 
+        }
+        
+        .imagenes__3{
+            grid-area: "3"; 
+        }
+        
+        .imagenes__4{
+            grid-area: "4"; 
+        }
+    }
+
+    
+    
+    .suscribe a{
+        display: inline-block;
+        text-decoration: none;
+        color: $secondary;
+        font-family: $font-three;
+        padding: .9rem;
+        border-radius: 10px;
+        background-color: $principal;
+        filter: opacity(70%);
+        margin: 110px 0px 110px 500px;
+    }
+}

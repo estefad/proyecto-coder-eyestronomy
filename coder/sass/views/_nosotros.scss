@@ -1,0 +1,19 @@
+/*NOSOTROS*/
+.nosotros{
+    display: flex;
+    width: 80%;
+    margin-left: 10rem;
+}
+
+.nosotros__titulo{
+    font-family: var($font-one);
+    color: var($secondary);
+    margin: 2rem;
+    text-align: center;
+}
+.nosotros__parrafo{
+    color: var($secondary);
+    font-family: var($principal);
+    font-size: 1.6em;
+    text-align: center;
+}

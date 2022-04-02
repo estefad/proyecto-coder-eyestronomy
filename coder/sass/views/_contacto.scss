@@ -1,0 +1,55 @@
+/*FORM*/
+.contacto {
+  display: flex;
+  width: 30%;
+  margin: 3rem auto;
+}
+.p {
+  font-family: var($font-one);
+  color: var($secondary);
+  margin: 2rem;
+  text-align: center;
+}
+.form {
+  margin-top: 2rem;
+  /*separacion entre input y parrafo  */
+
+  .form label {
+    text-align: right;
+    font-size: 13px;
+    margin-bottom: 0.3rem;
+    margin: 0.5rem;
+    font-size: 1rem;
+    color: var($secondary);
+  }
+  .form input {
+    margin-bottom: 20px;
+    background-color: var($principal);
+    border: 1px solid black;
+    opacity: 70%;
+    border-radius: 10px;
+    width: 130%;
+    padding: 1.5rem 3rem;
+  }
+
+  .form__area {
+    margin-bottom: 20px;
+    background-color: var($principal);
+    border: 1px solid black;
+    opacity: 70%;
+    border-radius: 10px;
+    width: 130%;
+    padding: 1.5rem 3rem;
+  }
+
+  .form__button {
+    margin-bottom: 20px;
+    margin: 1rem;
+    background-color: var($principal);
+    border: 1px solid black;
+    opacity: 70%;
+    border-radius: 10px;
+    width: 30%;
+    padding: 1.5rem 1rem;
+  }
+}
