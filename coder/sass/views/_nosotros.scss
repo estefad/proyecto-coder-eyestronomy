@@ -1,19 +1,26 @@
 /*NOSOTROS*/
-.nosotros{
-    display: flex;
-    width: 80%;
-    margin-left: 10rem;
+main{
+    .titulo{
+        font-family: $font-one;
+        color: $secondary;
+        margin: 3rem;
+        text-align: center;
+    }
+    
+    .nosotros{
+        display: flex;
+        width: 80%;
+        margin-left: 10rem;
+    
+        &__parrafo{
+            color: $secondary;
+            font-family: $principal;
+            font-size: 1.6em;
+            text-align: center;
+        }
+    }
+    
 }
 
-.nosotros__titulo{
-    font-family: var($font-one);
-    color: var($secondary);
-    margin: 2rem;
-    text-align: center;
-}
-.nosotros__parrafo{
-    color: var($secondary);
-    font-family: var($principal);
-    font-size: 1.6em;
-    text-align: center;
-}
+
+

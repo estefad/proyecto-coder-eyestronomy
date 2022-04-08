@@ -1,7 +1,6 @@
 /*FOOTER*/
 footer{
-    display: flex;
-    flex-wrap: wrap;
+    @include flex(flex, none,wrap, none);
     gap: 15px;
     background-color: $principal;
     border-radius: 10px 10px 10px 10px;

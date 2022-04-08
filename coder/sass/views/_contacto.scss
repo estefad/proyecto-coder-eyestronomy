@@ -3,10 +3,11 @@
   display: flex;
   width: 30%;
   margin: 3rem auto;
+  margin-left: 23rem;
 }
 .p {
-  font-family: var($font-one);
-  color: var($secondary);
+  font-family: $font-one;
+  color: $secondary;
   margin: 2rem;
   text-align: center;
 }
@@ -14,17 +15,17 @@
   margin-top: 2rem;
   /*separacion entre input y parrafo  */
 
-  .form label {
+  & label {
     text-align: right;
     font-size: 13px;
     margin-bottom: 0.3rem;
     margin: 0.5rem;
     font-size: 1rem;
-    color: var($secondary);
+    color: $secondary;
   }
-  .form input {
+  & input {
     margin-bottom: 20px;
-    background-color: var($principal);
+    background-color: $principal;
     border: 1px solid black;
     opacity: 70%;
     border-radius: 10px;
@@ -32,20 +33,17 @@
     padding: 1.5rem 3rem;
   }
 
-  .form__area {
-    margin-bottom: 20px;
-    background-color: var($principal);
-    border: 1px solid black;
-    opacity: 70%;
-    border-radius: 10px;
-    width: 130%;
-    padding: 1.5rem 3rem;
+  &__check{
+    margin-left: -6rem;
   }
 
-  .form__button {
+  &__area {
+    @extend input;
+  }
+
+  &__button {
     margin-bottom: 20px;
-    margin: 1rem;
-    background-color: var($principal);
+    background-color: $principal;
     border: 1px solid black;
     opacity: 70%;
     border-radius: 10px;

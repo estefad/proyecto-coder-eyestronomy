@@ -79,7 +79,7 @@ li a {
   font-size: 1.3rem; }
 
 .navbar-toggler {
-  margin-top: -2.5rem; }
+  margin-top: -1.5rem; }
 
 .slide img {
   top: 30px; }
@@ -135,15 +135,16 @@ li a {
     /*MAIN*/
     /*FOOTER*/
     /*FORM*/
-    /*GALERIA*/
-    /*NOSOTROS*/ }
+    /*GALERIA*/ }
     body header {
       min-width: 320px;
       padding: 0 auto;
       margin-bottom: -1rem; }
       body header .titulo {
         display: flex;
-        align-items: center; }
+        align-items: center;
+        flex-wrap: nowrap;
+        justify-content: none; }
         body header .titulo__parrafo {
           display: none; }
         body header .titulo__titulo {
@@ -163,12 +164,13 @@ li a {
         margin: .5rem;
         font-size: .8em; }
     body main {
-      min-width: 320px; }
+      min-width: 320px;
+      /*NOSOTROS*/ }
       body main #intro-p {
         margin-top: 4rem; }
       body main .intro p {
-        font-size: .8em;
-        margin-top: 1rem; }
+        font-size: 1em;
+        margin-top: 4rem; }
       body main .imagen .principal__img {
         width: 320px;
         height: 160px;
@@ -198,10 +200,21 @@ li a {
         padding: .8rem;
         margin: 2rem 7rem;
         font-size: .5em; }
+      body main .nosotros {
+        display: flex;
+        width: 80%;
+        margin-left: 2.5rem; }
+        body main .nosotros .nosotros__parrafo {
+          font-size: .9em;
+          text-align: justify; }
+      body main .titulo {
+        font-size: 1em;
+        margin-top: 4rem; }
     body footer {
       display: flex;
       align-items: center;
       flex-wrap: nowrap;
+      justify-content: none;
       min-width: 320px; }
       body footer .foot__img {
         border-radius: 100%;
@@ -214,6 +227,10 @@ li a {
       body footer .redes {
         display: flex;
         justify-content: center; }
+        body footer .redes__li, body footer .redes__li--img2, body footer .redes__li--img3 {
+          margin: 5px 0px 0px 5px;
+          width: 15px;
+          height: 15px; }
         body footer .redes__titulo {
           font-size: .6em;
           margin: 5px 0px 0px 10px; }
@@ -222,49 +239,36 @@ li a {
           margin: 5px 0px 0px 10px;
           width: 15px;
           height: 15px; }
-        body footer .redes__li--img2 {
-          margin: 5px 0px 0px 5px;
-          width: 15px;
-          height: 15px; }
-        body footer .redes .redes__li--img3 {
-          margin: 5px 0px 0px 5px;
-          width: 15px;
-          height: 15px; }
     body .contacto {
       min-width: 200px;
       margin: 1rem 3rem; }
     body .p {
-      margin: 1rem;
+      margin: 4rem;
       font-size: .9rem; }
-    body .form input {
+    body .form input, body .form .form__area {
       margin-bottom: 15px;
       border-radius: 5px; }
+    body .form__check {
+      margin-left: -1.8rem; }
     body .form__area {
       margin-bottom: 15px;
       border-radius: 5px; }
-    body .form__label {
-      font-size: .9rem;
-      font-size: 10px; }
+    body .form label {
+      font-size: .8rem; }
     body .form__button {
       margin-bottom: 5rem;
       border-radius: 5px;
       padding: 0;
-      height: 9%; }
+      height: 5%; }
+    body .galeria__titulo {
+      font-size: 1em;
+      margin-top: 4rem; }
     body .galeria img {
       width: 200px;
       height: 200px; }
     body .galeria img:hover {
       width: 250px;
-      height: 150px; }
-    body .nosotros {
-      display: flex;
-      width: 80%;
-      margin-left: 2.5rem; }
-    body .nosotros__titulo {
-      font-size: 1em; }
-    body .nosotros__parrafo {
-      font-size: .9em;
-      text-align: justify; } }
+      height: 150px; } }
 
 /*HEADER*/
 header {
@@ -320,6 +324,8 @@ main {
     margin-top: 2rem; }
   main .imagen {
     display: flex;
+    align-items: none;
+    flex-wrap: nowrap;
     justify-content: center;
     margin-top: 1rem;
     padding: 1rem; }
@@ -369,10 +375,93 @@ main {
     filter: opacity(70%);
     margin: 110px 0px 110px 500px; }
 
+/*GALERIA*/
+.galeria__titulo {
+  font-size: 1.5em;
+  font-family: monospace;
+  color: white;
+  text-align: center;
+  margin-top: 2rem; }
+
+.galeria img {
+  object-fit: cover;
+  margin: 8px 8px 8px 8px;
+  position: relative;
+  transition: all 2s; }
+  .galeria img:hover {
+    width: 410px;
+    height: 210px; }
+
+.galeria [title] {
+  font-family: "Courier New", Courier, monospace;
+  color: #242e30;
+  border-radius: 5px; }
+
+/*NOSOTROS*/
+main .titulo {
+  font-family: monospace;
+  color: white;
+  margin: 3rem;
+  text-align: center; }
+
+main .nosotros {
+  display: flex;
+  width: 80%;
+  margin-left: 10rem; }
+  main .nosotros__parrafo {
+    color: white;
+    font-family: #242e30;
+    font-size: 1.6em;
+    text-align: center; }
+
+/*FORM*/
+.contacto {
+  display: flex;
+  width: 30%;
+  margin: 3rem auto;
+  margin-left: 23rem; }
+
+.p {
+  font-family: monospace;
+  color: white;
+  margin: 2rem;
+  text-align: center; }
+
+.form {
+  margin-top: 2rem;
+  /*separacion entre input y parrafo  */ }
+  .form label {
+    text-align: right;
+    font-size: 13px;
+    margin-bottom: 0.3rem;
+    margin: 0.5rem;
+    font-size: 1rem;
+    color: white; }
+  .form input, .form .form__area {
+    margin-bottom: 20px;
+    background-color: #242e30;
+    border: 1px solid black;
+    opacity: 70%;
+    border-radius: 10px;
+    width: 130%;
+    padding: 1.5rem 3rem; }
+  .form__check {
+    margin-left: -6rem; }
+  .form__button {
+    margin-bottom: 20px;
+    background-color: #242e30;
+    border: 1px solid black;
+    opacity: 70%;
+    border-radius: 10px;
+    width: 30%;
+    padding: 1.5rem 1rem; }
+
 /*FOOTER*/
 footer {
   display: flex;
+  align-items: none;
   flex-wrap: wrap;
+  justify-content: none;
   gap: 15px;
   background-color: #242e30;
   border-radius: 10px 10px 10px 10px;

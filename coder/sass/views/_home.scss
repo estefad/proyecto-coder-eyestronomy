@@ -9,8 +9,7 @@ main{
     }
     
     .imagen{
-        display: flex;
-        justify-content: center;
+        @include flex(flex, none,nowrap, center);
         margin-top: 1rem;
         padding: 1rem;
     }
@@ -32,8 +31,12 @@ main{
             padding: .3rem;
             border-radius: 1rem;
             background-color: $principal;
+
         }
-    }
+
+        
+
+    } 
     
 
     /*GRID IMAGENES*/
@@ -70,8 +73,6 @@ main{
         }
     }
 
-    
-    
     .suscribe a{
         display: inline-block;
         text-decoration: none;
