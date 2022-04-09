@@ -1,17 +1,19 @@
-@import url('https://fonts.googleapis.com/css2? family= Nanum+Gothic+Coding & display=swap');
+/*@import url('https://fonts.googleapis.com/css2? family= Nanum+Gothic+Coding & display=swap');
 @import url('https://fonts.googleapis.com/css2? familia= EB+Garamond:ital@0;1 &family= Nanum+Gothic+Coding & display=swap');
 
 /*VARIABLES*/
+/*
 :root{
-    --principal:rgb(36, 46, 48);
-    --secondary: white;
-    --font-one: monospace;
-    --font-two: 'Courier New', Courier, monospace;
-    --font-three: Verdana, Geneva, Tahoma, sans-serif;
+    $principal:rgb(36, 46, 48);
+    $secondary: white;
+    $font-one: monospace;
+    $font-two: 'Courier New', Courier, monospace;
+    $font-three: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 
 /*RESET-todas las etiquetas pueden recibir contenido antes o despues*/
+/*
 *,
 *::after,
 *::before{
@@ -22,20 +24,21 @@
 
 html{
     font-size: 62,5%;/*10px de base al html, y para pasar a em 1em o 24px= 2.4em*/
-    font-family: var(--font-one);
+    /*
+    font-family: var($font-one);
 }
 
-/*GENERALES*/
-
+/*GLOBALES*/
+/*
 body{
     display: grid;
     min-width: 1200px;
     height: 200vh;
     flex-direction: column;
     background-image: url(https://www.wallpapertip.com/wmimgs/3-32659_best-jet-black-iphone-wallpaper-star-wallpaper-hd.jpg);
-    background-attachment: fixed;/* queda fija la img en pantalla*/
-    background-repeat:repeat; /* repite la img*/
-    background-size:contain; /* contiene la img sin estirar ni recortarla*/
+    background-attachment: fixed;
+    background-repeat:repeat; 
+    background-size:contain; 
     object-fit: cover;
     margin: 0 auto;
     grid-template-columns: 1fr;
@@ -56,7 +59,7 @@ li a{
 }
 
 /*HELPERS*/
-
+/*
 .flex-row{
     display: flex;
 }
@@ -67,8 +70,9 @@ li a{
 }
 
 /*HEADER*/
+/*
 header{
-    background-color: var(--principal);
+    background-color: var($principal);
     opacity: 70%;
     border-radius: 10px 10px 10px 10px;
     padding: 0 2rem;
@@ -82,21 +86,21 @@ header{
 
 .titulo{
     display: inline-block;  
-    position:relative; /* como un elem esta posicionado en el doc*/
-    color: var(--secondary);
+    position:relative; 
+    color: var($secondary);
 }
 
 .titulo__titulo{
     margin: 15px 0px 0px 15px;
-    font-family: var(--font-one);
+    font-family: var($font-one);
     font-weight: lighter;
-    bottom: -2rem;/*aprox 40px*/
-    left: 6rem;/*aprox 80px*/
+    bottom: -2rem;
+    left: 6rem;
 }
 
 .titulo__parrafo{
-    font-family: var(--font-two);
-    color: var(--secondary);
+    font-family: var($font-two);
+    color: var($secondary);
     font-size: .9em;
     left: 270px;
     bottom: -2.5em;
@@ -116,18 +120,18 @@ header{
 }
 
 .menu a{
-    color: var(--secondary);
+    color: var($secondary);
     padding: 1rem ;
     margin-left: 9rem;
 }
 
 /*MAIN*/
-
+/*
 
 .intro p{
     font-size: 1.5em;
-    font-family: var(--font-one);
-    color: var(--secondary);
+    font-family: var($font-one);
+    color: var($secondary);
     text-align: center;
     margin-top: 2rem;
 }
@@ -142,24 +146,25 @@ header{
 .principal__parrafo{
     text-align: justify;
     font-size: .9em;
-    font-family: var(--font-three);
+    font-family: var($font-three);
     letter-spacing: 1px;
     line-height:inherit;
     margin-left: 9rem;
     margin-right: 9rem;
-    color: var(--secondary);
+    color: var($secondary);
 }
 
 .principal__parrafo a{
     text-decoration: none;
     font-size: .7em;
-    color: var(--secondary);
+    color: var($secondary);
     padding: .3rem;
     border-radius: 1rem;
-    background-color: var(--principal);
+    background-color: var($principal);
 }
 
 /*GRID IMAGENES*/
+/*
 .row__imagenes{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -196,21 +201,22 @@ header{
 .suscribe a{
     display: inline-block;
     text-decoration: none;
-    color: var(--secondary);
-    font-family: var(--font-three);
+    color: var($secondary);
+    font-family: var($font-three);
     padding: .9rem;
     border-radius: 10px;
-    background-color: var(--principal);
+    background-color: var($principal);
     filter: opacity(70%);
     margin: 110px 0px 110px 500px;
 }
 
 /*FOOTER*/
+/*
 footer{
     display: flex;
     flex-wrap: wrap;
     gap: 15px;
-    background-color:var(--principal);
+    background-color:var($principal);
     border-radius: 10px 10px 10px 10px;
     filter: opacity(70%);
 }
@@ -221,9 +227,9 @@ footer{
 }
 
 .derechos__p{
-    color:var(--secondary);
+    color:var($secondary);
     margin: 0px 10px 20px 120px;
-    font-family: var(--font-one);
+    font-family: var($font-one);
     font-weight: lighter;
 }
 
@@ -233,9 +239,9 @@ footer{
 }
 
 .redes__titulo{
-    font-family: var(--font-three);
+    font-family: var($font-three);
     font-size: 1em;
-    color: var(--secondary);
+    color: var($secondary);
     margin: 60px 10px 10px 380px;
 }
 
@@ -252,20 +258,21 @@ footer{
 }
 
 /*FORM*/
+/*
 .contacto{
     display: flex;
     width: 30%;
     margin: 3rem auto;
 }
 .p{
-    font-family: var(--font-one);
-    color: var(--secondary);
+    font-family: var($font-one);
+    color: var($secondary);
     margin: 2rem;;
     text-align: center;
 }
 .form{
     margin-top: 2rem;
-  /*separacion entre input y parrafo  */
+  
 }
 
 .form label{
@@ -274,11 +281,11 @@ footer{
     margin-bottom: .3rem;
     margin: .5rem;
     font-size: 1rem;
-    color: var(--secondary);
+    color: var($secondary);
 }
 .form input{
     margin-bottom: 20px;
-    background-color: var(--principal);
+    background-color: var($principal);
     border: 1px solid black;
     opacity: 70%;
     border-radius: 10px;
@@ -288,7 +295,7 @@ footer{
 
 .form__area{
     margin-bottom: 20px;
-    background-color: var(--principal);
+    background-color: var($principal);
     border: 1px solid black;
     opacity: 70%;
     border-radius: 10px;
@@ -299,7 +306,7 @@ footer{
 .form__button{
     margin-bottom: 20px;
     margin: 1rem;
-    background-color: var(--principal);
+    background-color: var($principal);
     border: 1px solid black;
     opacity: 70%;
     border-radius: 10px;
@@ -308,10 +315,11 @@ footer{
 }
 
 /*GALERIA*/
+/*
 .galeria__titulo{
     font-size: 1.5em;
-    font-family: var(--font-one);
-    color: var(--secondary);
+    font-family: var($font-one);
+    color: var($secondary);
     text-align: center;
     margin-top: 2rem;
 }
@@ -329,12 +337,13 @@ footer{
 }
 
 [title]{
-    font-family: var(--font-two);
-    color: var(--principal);
+    font-family: var($font-two);
+    color: var($principal);
     border-radius: 5px;
 }
 
 /*NOSOTROS*/
+/*
 .nosotros{
     display: flex;
     width: 80%;
@@ -342,14 +351,14 @@ footer{
 }
 
 .nosotros__titulo{
-    font-family: var(--font-one);
-    color: var(--secondary);
+    font-family: var($font-one);
+    color: var($secondary);
     margin: 2rem;
     text-align: center;
 }
 .nosotros__parrafo{
-    color: var(--secondary);
-    font-family: var(--principal);
+    color: var($secondary);
+    font-family: var($principal);
     font-size: 1.6em;
     text-align: center;
 }
@@ -373,6 +382,7 @@ footer{
     }
 
     /*HEADER*/
+    /*
     header{
         min-width: 320px;
         padding: 0 auto;
@@ -411,6 +421,7 @@ footer{
     }
    
     /*MAIN*/
+    /*
     main{
         min-width: 320px;
     }
@@ -471,7 +482,7 @@ footer{
     }
 
     /*FOOTER*/
-    
+    /*
     footer{
         display: flex;
         align-items: center;
@@ -501,7 +512,7 @@ footer{
     }
 
     .redes__li--img1{
-        /* Arriba | Derecha | Abajo | Izquierda */
+        
         margin: 5px 0px 0px 10px;
         width: 15px;
         height:15px;
@@ -519,7 +530,7 @@ footer{
         height:15px;
     }
     /*FORM*/
-    
+    /*
     .contacto{
         min-width: 200px;
         margin: 1rem 3rem;
@@ -553,6 +564,7 @@ footer{
     }
 
     /*GALERIA*/
+    /*
     .galeria img{
         width: 200px;
         height: 200px;
@@ -564,7 +576,7 @@ footer{
     }
 
     /*NOSOTROS*/
-
+    /*
     .nosotros{
         display: flex;
         width: 80%;
@@ -585,8 +597,9 @@ footer{
 
 
 /*BOOTSTRAP*/
+/*
 .navbar-light .navbar-brand {
-    color: var(--secondary);
+    color: var($secondary);
     margin-left: 4rem;
 }
 
@@ -596,7 +609,7 @@ footer{
 }
 
 .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show>.nav-link {
-    color: var(--secondary);
+    color: var($secondary);
     width: 20%;
     
 }
@@ -611,7 +624,7 @@ footer{
     left: 25%;
 }
 .navbar-light .navbar-nav .nav-link {
-    color: var(--secondary);
+    color: var($secondary);
     margin: 0.2rem;
 }
 .navbar-light .navbar-brand {
@@ -633,14 +646,14 @@ footer{
 .galeria{
     text-align: center;
     margin: 3rem;
-    color: var(--secondary);
-    font-family: var(--font-three);
+    color: var($secondary);
+    font-family: var($font-three);
 }
 
 .form-control{
     
     border-radius: 5px;
-    background-color: var(--principal);
+    background-color: var($principal);
     opacity: 70%;
     border: 1px solid black;
     padding: 1rem 1rem;
@@ -654,30 +667,30 @@ footer{
 }
 .form-label {
     margin-bottom: 1rem;
-    color: var(--secondary);
-    font-family: var(--font-one);
+    color: var($secondary);
+    font-family: var($font-one);
     font-size: 1.3em;
     
 }
 .form-check-label{
-    color: var(--secondary);
+    color: var($secondary);
 }
 .t {
-    font-family: var(--font-one);
-    color: var(--secondary);
+    font-family: var($font-one);
+    color: var($secondary);
     margin: 2rem;
     text-align: center;
 }
 
 .btn-primary {
     color: #fff;
-    background-color: var(--principal);
-    border-color: var(--principal);
+    background-color: var($principal);
+    border-color: var($principal);
 }
 
 .menu li .boot{
     display: block;
-    color: var(--secondary);
+    color: var($secondary);
     padding: 1rem;
     margin-left: 2rem;
 }
