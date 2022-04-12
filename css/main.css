@@ -167,7 +167,7 @@ li a {
       margin-left: 2rem;
       font-size: 1em; }
     body .navbar-collapse {
-      margin-left: -1.7rem; }
+      margin-left: -1.1rem; }
     body main {
       min-width: 320px;
       /*NOSOTROS*/ }
@@ -200,10 +200,12 @@ li a {
         body main .row__imagenes .imagenes__4 {
           width: 120px;
           height: 180px; }
+      body main .suscribe {
+        margin: 1rem; }
       body main .suscribe a {
         justify-content: center;
         padding: .8rem;
-        margin: 2rem 5rem;
+        margin: 2rem 4rem;
         font-size: .5em; }
       body main .video__parrafo {
         margin-top: -4rem;
