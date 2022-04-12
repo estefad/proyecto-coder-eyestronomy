@@ -163,13 +163,18 @@ li a {
         padding: 0;
         margin: .5rem;
         font-size: .8em; }
+    body .navbar-light .navbar-brand {
+      margin-left: 2rem;
+      font-size: 1em; }
+    body .navbar-collapse {
+      margin-left: -1.7rem; }
     body main {
       min-width: 320px;
       /*NOSOTROS*/ }
       body main #intro-p {
         margin-top: 4rem; }
       body main .intro p {
-        font-size: 1em;
+        font-size: .8em;
         margin-top: 4rem; }
       body main .imagen .principal__img {
         width: 320px;
@@ -179,7 +184,7 @@ li a {
       body main .principal__parrafo {
         display: block;
         text-align: center;
-        font-size: .5em;
+        font-size: .6em;
         margin: 0; }
       body main .row__imagenes {
         width: 320px; }
@@ -198,8 +203,11 @@ li a {
       body main .suscribe a {
         justify-content: center;
         padding: .8rem;
-        margin: 2rem 7rem;
+        margin: 2rem 5rem;
         font-size: .5em; }
+      body main .video__parrafo {
+        margin-top: -4rem;
+        margin-bottom: 2rem; }
       body main .nosotros {
         display: flex;
         width: 80%;
@@ -222,7 +230,7 @@ li a {
         width: 50px;
         height: 50px; }
       body footer .derechos__p {
-        margin: 6px 35px 4px 41px;
+        margin: 6px 35px 4px 34px;
         font-size: .3em; }
       body footer .redes {
         display: flex;
@@ -233,7 +241,7 @@ li a {
           height: 15px; }
         body footer .redes__titulo {
           font-size: .6em;
-          margin: 5px 0px 0px 10px; }
+          margin: 12px -31px 0px 37px; }
         body footer .redes__li--img1 {
           /* Arriba | Derecha | Abajo | Izquierda */
           margin: 5px 0px 0px 10px;
@@ -241,7 +249,7 @@ li a {
           height: 15px; }
     body .contacto {
       min-width: 200px;
-      margin: 1rem 3rem; }
+      margin: -3rem 3rem; }
     body .p {
       margin: 4rem;
       font-size: .9rem; }
@@ -268,7 +276,17 @@ li a {
       height: 200px; }
     body .galeria img:hover {
       width: 250px;
-      height: 150px; } }
+      height: 150px; }
+  /*CIENCIA*/
+  iframe {
+    width: 320px;
+    height: 215px;
+    margin: -7rem -3rem; } }
+
+.video {
+  display: flex;
+  justify-content: center;
+  margin: 12rem auto; }
 
 /*HEADER*/
 header {
@@ -345,6 +363,9 @@ main {
       padding: .3rem;
       border-radius: 1rem;
       background-color: #242e30; }
+  main .video__parrafo {
+    margin-left: 30rem;
+    margin-top: -10rem; }
   main .row__imagenes {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -354,15 +375,19 @@ main {
     main .row__imagenes {
       width: 450px;
       margin: 0px auto; }
-    main .row__imagenes .imagenes__1 {
+    main .row__imagenes .imagenes__1:hover {
+      filter: brightness(1.25);
       grid-area: "1";
       top: 2rem; }
-    main .row__imagenes .imagenes__2 {
+    main .row__imagenes .imagenes__2:hover {
+      filter: brightness(1.25);
       grid-area: "2";
       top: 2rem; }
-    main .row__imagenes .imagenes__3 {
+    main .row__imagenes .imagenes__3:hover {
+      filter: brightness(1.25);
       grid-area: "3"; }
-    main .row__imagenes .imagenes__4 {
+    main .row__imagenes .imagenes__4:hover {
+      filter: brightness(1.25);
       grid-area: "4"; }
   main .suscribe a {
     display: inline-block;
@@ -390,7 +415,7 @@ main {
   transition: all 2s; }
   .galeria img:hover {
     width: 410px;
-    height: 210px; }
+    height: 240px; }
 
 .galeria [title] {
   font-family: "Courier New", Courier, monospace;
@@ -471,7 +496,7 @@ footer {
     margin: 5px 50px 0px 180px; }
   footer .derechos__p {
     color: white;
-    margin: 0px 10px 20px 120px;
+    margin: 0px 10px 20px 94px;
     font-family: monospace;
     font-weight: lighter; }
   footer .redes {

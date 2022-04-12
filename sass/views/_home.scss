@@ -32,11 +32,14 @@ main{
             border-radius: 1rem;
             background-color: $principal;
 
-        }
-
-        
+        }   
 
     } 
+
+    .video__parrafo{
+        margin-left: 30rem;
+        margin-top: -10rem;
+    }   
     
 
     /*GRID IMAGENES*/
@@ -50,25 +53,31 @@ main{
         align-items: center;
     
         &{
+            
             width: 450px;
             margin: 0px auto;
         }
 
-        .imagenes__1{
+        .imagenes__1:hover{
+            filter:brightness(1.25);
             grid-area: "1";
             top: 2rem;
+
         }
         
-        .imagenes__2{
+        .imagenes__2:hover{
+            filter:brightness(1.25);
             grid-area: "2"; 
             top: 2rem; 
         }
         
-        .imagenes__3{
+        .imagenes__3:hover{
+            filter:brightness(1.25);
             grid-area: "3"; 
         }
         
-        .imagenes__4{
+        .imagenes__4:hover{
+            filter:brightness(1.25);
             grid-area: "4"; 
         }
     }
