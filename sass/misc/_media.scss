@@ -1,11 +1,11 @@
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 480px){
 
     body{
         display: grid;
         min-width: 320px;
         height: 100vh;
         grid-template-columns: 1fr;
-        grid-template-rows: 30vh 1fr 20vh;
+        grid-template-rows: 25vh 1fr 20vh;
         grid-template-areas: 
         "header"
         "main"
@@ -122,6 +122,7 @@
             }
         
             .suscribe a{
+                max-width: 60%;
                 justify-content: center;
                 padding: .8rem; 
                 margin: 2rem 4rem;
@@ -132,6 +133,17 @@
                 margin-top: -4rem;
                 margin-bottom: 2rem;
             } 
+
+            .video__hole{
+                margin-left: 4rem;
+                margin-top: 9rem;
+            }
+
+            .texto{
+                margin-left: -3rem;
+                margin-right: 1rem;
+                margin-top: 8rem;
+            }
 
             /*NOSOTROS*/
 
@@ -150,7 +162,6 @@
                 font-size: 1em;
                 margin-top: 4rem;
             }
-        
         }
 
     
@@ -212,6 +223,10 @@
         .contacto{
             min-width: 200px;
             margin: -3rem 3rem;
+
+            & .check type[checkbox]{
+                margin-left: 12rem;
+            }
         }
         
         .p{
@@ -225,9 +240,7 @@
             
         }
 
-        .form__check{
-            margin-left: -1.8rem;
-        }
+        
         
         .form__area{
             margin-bottom: 15px;
@@ -244,6 +257,7 @@
             padding: 0;
             height: 5%;
         }
+
 
         /*GALERIA*/
         .galeria__titulo {
@@ -262,11 +276,18 @@
     }
 
     /*CIENCIA*/
+
     iframe{
         width: 320px;
         height: 215px;
         margin: -7rem -3rem;
+
+        &_h{
+            margin: -8rem -8rem;
+        }
     }
+
+    
 
     
 }

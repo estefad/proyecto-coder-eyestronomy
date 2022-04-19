@@ -1,9 +1,9 @@
 /*FORM*/
 .contacto {
   display: flex;
-  width: 30%;
-  margin: 3rem auto;
-  margin-left: 23rem;
+  width: 50%;
+  margin: 0 auto;
+  margin-left: 8rem;
 }
 .p {
   font-family: $font-one;
@@ -33,10 +33,6 @@
     padding: 1.5rem 3rem;
   }
 
-  &__check{
-    margin-left: -6rem;
-  }
-
   &__area {
     @extend input;
   }
@@ -49,5 +45,14 @@
     border-radius: 10px;
     width: 30%;
     padding: 1.5rem 1rem;
+  }
+
+  .notice{
+    margin-top: 1rem;
+  }
+
+  .check{
+    margin-left: 0;
+    width: 10%;
   }
 }

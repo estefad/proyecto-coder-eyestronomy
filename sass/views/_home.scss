@@ -12,6 +12,7 @@ main{
         @include flex(flex, none,nowrap, center);
         margin-top: 1rem;
         padding: 1rem;
+        
     }
     
     .principal__parrafo{
@@ -37,53 +38,22 @@ main{
     } 
 
     .video__parrafo{
-        margin-left: 30rem;
+        margin-left: 24rem;
         margin-top: -10rem;
-    }   
+    }  
     
+    .video__hole{
+        margin-left: 9rem;
+        margin-top: 6rem;
+    }  
 
-    /*GRID IMAGENES*/
-    .row__imagenes{
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(2, 1fr);
-        grid-template-areas: 
-        "1 2"
-        "3 4";
-        align-items: center;
-    
-        &{
-            
-            width: 450px;
-            margin: 0px auto;
-        }
-
-        .imagenes__1:hover{
-            filter:brightness(1.25);
-            grid-area: "1";
-            top: 2rem;
-
-        }
-        
-        .imagenes__2:hover{
-            filter:brightness(1.25);
-            grid-area: "2"; 
-            top: 2rem; 
-        }
-        
-        .imagenes__3:hover{
-            filter:brightness(1.25);
-            grid-area: "3"; 
-        }
-        
-        .imagenes__4:hover{
-            filter:brightness(1.25);
-            grid-area: "4"; 
-        }
+    .texto{
+        margin-left: 31rem;
     }
 
     .suscribe a{
-        display: inline-block;
+        @include flex(flex, center, nowrap, center);
+        max-width: 30%;
         text-decoration: none;
         color: $secondary;
         font-family: $font-three;
@@ -91,6 +61,6 @@ main{
         border-radius: 10px;
         background-color: $principal;
         filter: opacity(70%);
-        margin: 110px 0px 110px 500px;
+        margin: 110px 0px 110px 430px;
     }
 }

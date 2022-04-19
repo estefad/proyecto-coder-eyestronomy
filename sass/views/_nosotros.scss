@@ -6,11 +6,15 @@ main{
         margin: 3rem;
         text-align: center;
     }
+
+    .nos{
+        margin-top: 10rem;
+    }
     
     .nosotros{
         display: flex;
         width: 80%;
-        margin-left: 10rem;
+        margin-left: 8rem;
     
         &__parrafo{
             color: $secondary;
