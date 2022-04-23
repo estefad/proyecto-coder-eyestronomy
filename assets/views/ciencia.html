@@ -9,8 +9,10 @@
     james webb, nasa, galaxias, spacex, descubrimientos, agujeros negros, esa">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+     <link rel="stylesheet" href="../../css/main.css">
+     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
    <!--<link rel="stylesheet" href="../styles/estilos.css"> --> 
-    <link rel="stylesheet" href="../../css/main.css">
+    
     <title>Eyestronomy | Ciencia</title>
 </head>
 <body>
@@ -24,7 +26,10 @@
 
             <h1 class=" titulo titulo__titulo">EYESTRONOMY</h1>
             
-            <p class="titulo titulo__parrafo">"Equipado con sus cinco sentidos, el Hombre explora el Universo <br/>que lo rodea y a sus aventuras las llama Ciencia." Edwin Hubble</p>
+            
+            <div data-aos="fade-down" data-aos-easing="linear" data-aos-duration="1500">
+                <p class="titulo titulo__parrafo">"Equipado con sus cinco sentidos, el Hombre explora el Universo <br/>que lo rodea y a sus aventuras las llama Ciencia." Edwin Hubble</p>
+            </div>
         </div>
         <nav class="navbar navbar-expand-lg navbar-light">
             <div class="container-fluid">
@@ -82,7 +87,7 @@
                 <iframe width="560" height="315" src="https://www.youtube.com/embed/wmzxFiL3mQI" title="YouTube video player" frameborder="0" allow="accelerometer;
                  autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
             </div>
-            <p class="principal principal__parrafo video__parrafo">Mira mas contenido acerca del universo
+            <p class="principal principal__parrafo video__parrafo">Mas contenido en
                 <a href="https://www.youtube.com/channel/UCuArgGTKBRsqFXxfecR998w"> The Simply Space</a></p>
         </section>
         
@@ -113,5 +118,9 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" 
     integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 </html>

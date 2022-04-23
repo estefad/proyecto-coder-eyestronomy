@@ -64,17 +64,37 @@
             margin-left: -1.1rem;
         }
 
+        
+
+        .navbar-light .navbar-toggler-icon {
+            width: 20px;
+            margin-left: -0.3rem;
+            margin-top: -0.3rem;
+        }
+
+        .navbar-light .navbar-toggler {
+            width: 35px;
+            height: 30px;
+        }
+
+        .navbar>.container-fluid {
+            margin-top: -3rem;
+        }
+        .navbar-nav {
+            font-size: .9em;
+        }
+
     
         /*MAIN*/
         main{
-            min-width: 320px;
+            max-width: 320px;
 
             #intro-p{
                 margin-top: 4rem;
             }
         
             .intro p{
-                font-size: .8em;
+                font-size: .7em;
                 margin-top: 4rem;
             }
             
@@ -89,7 +109,7 @@
                 display:block;
                 text-align: center;
                 font-size: .6em;
-                margin: 0;
+                margin: .3rem;
             }
         
             .row__imagenes{
@@ -118,7 +138,7 @@
             }
             
             .suscribe{
-                margin: 1rem;
+                margin: 0;
             }
         
             .suscribe a{
@@ -126,7 +146,7 @@
                 justify-content: center;
                 padding: .5rem; 
                 margin: 2rem 4rem;
-                font-size: .4em;
+                font-size: .5em;
             }
 
             .video__parrafo{
@@ -135,12 +155,16 @@
             } 
 
             .video__hole{
-                margin-left: 4rem;
+                margin-left: 3rem;
                 margin-top: 9rem;
+
+                &_h{
+                    margin: 0;
+                }
             }
 
             .texto{
-                margin-left: -3rem;
+                margin-left: 1rem;
                 margin-right: 1rem;
                 margin-top: 8rem;
             }
@@ -195,7 +219,7 @@
 
                 &__titulo{
                     font-size: .6em;
-                    margin: 12px -31px 0px 37px;
+                    margin: 12px -31px 0px 4px;
                 }
             
                 &__li--img1{
@@ -262,7 +286,7 @@
         /*GALERIA*/
 
         .galeria{
-            margin: 0; 
+            margin: 3.5rem; 
         }
          
     
@@ -284,7 +308,7 @@
     /*CIENCIA*/
 
     iframe{
-        width: 320px;
+        width: 312px;
         height: 215px;
         margin: -7rem -3rem;
 

@@ -62,6 +62,10 @@ li a {
   flex-direction: row;
   justify-content: center; }
 
+.navbar {
+  padding-top: 3.6rem;
+  padding-bottom: 0.5rem; }
+
 .navbar-light .navbar-nav .nav-link.active, .navbar-light .navbar-nav .show > .nav-link {
   color: white;
   width: 20%; }
@@ -88,43 +92,14 @@ li a {
 .slide img {
   top: 30px; }
 
-.carousel-item img {
-  width: 50%;
-  height: 50%; }
-
-.galeria {
-  text-align: center;
-  margin: 6rem;
-  color: white;
-  font-family: Verdana, Geneva, Tahoma, sans-serif; }
-
-.form-control {
-  border-radius: 5px;
-  background-color: #242e30;
-  opacity: 70%;
-  border: 1px solid black;
-  padding: 1rem 1rem; }
-
-.form-boot {
-  display: block;
-  margin: 4rem auto;
-  width: 50%;
-  left: 10rem; }
-
-.form-label {
-  margin-bottom: 1rem;
-  color: white;
-  font-family: monospace;
-  font-size: 1.3em; }
-
-.form-check-label {
-  color: white; }
-
 .t {
   font-family: monospace;
   color: white;
   margin: 2rem;
   text-align: center; }
+
+.navbar > .container-fluid {
+  margin-top: -12rem; }
 
 @media screen and (max-width: 720px) {
   body {
@@ -173,13 +148,24 @@ li a {
       font-size: .8em; }
     body .navbar-collapse {
       margin-left: -1.1rem; }
+    body .navbar-light .navbar-toggler-icon {
+      width: 20px;
+      margin-left: -0.3rem;
+      margin-top: -0.3rem; }
+    body .navbar-light .navbar-toggler {
+      width: 35px;
+      height: 30px; }
+    body .navbar > .container-fluid {
+      margin-top: -3rem; }
+    body .navbar-nav {
+      font-size: .9em; }
     body main {
-      min-width: 320px;
+      max-width: 320px;
       /*NOSOTROS*/ }
       body main #intro-p {
         margin-top: 4rem; }
       body main .intro p {
-        font-size: .8em;
+        font-size: .7em;
         margin-top: 4rem; }
       body main .imagen .principal__img {
         width: 320px;
@@ -190,7 +176,7 @@ li a {
         display: block;
         text-align: center;
         font-size: .6em;
-        margin: 0; }
+        margin: .3rem; }
       body main .row__imagenes {
         width: 320px; }
         body main .row__imagenes .imagenes__1 {
@@ -206,21 +192,23 @@ li a {
           width: 120px;
           height: 180px; }
       body main .suscribe {
-        margin: 1rem; }
+        margin: 0; }
       body main .suscribe a {
         max-width: 60%;
         justify-content: center;
         padding: .5rem;
         margin: 2rem 4rem;
-        font-size: .4em; }
+        font-size: .5em; }
       body main .video__parrafo {
         margin-top: -4rem;
         margin-bottom: 2rem; }
       body main .video__hole {
-        margin-left: 4rem;
+        margin-left: 3rem;
         margin-top: 9rem; }
+        body main .video__hole_h {
+          margin: 0; }
       body main .texto {
-        margin-left: -3rem;
+        margin-left: 1rem;
         margin-right: 1rem;
         margin-top: 8rem; }
       body main .nosotros {
@@ -256,7 +244,7 @@ li a {
           height: 15px; }
         body footer .redes__titulo {
           font-size: .6em;
-          margin: 12px -31px 0px 37px; }
+          margin: 12px -31px 0px 4px; }
         body footer .redes__li--img1 {
           /* Arriba | Derecha | Abajo | Izquierda */
           margin: 5px 0px 0px 10px;
@@ -284,7 +272,7 @@ li a {
       padding: 0;
       height: 5%; }
     body .galeria {
-      margin: 0; }
+      margin: 3.5rem; }
     body .galeria__titulo {
       font-size: 1em;
       margin-top: 4rem; }
@@ -296,7 +284,7 @@ li a {
       height: 150px; }
   /*CIENCIA*/
   iframe {
-    width: 320px;
+    width: 312px;
     height: 215px;
     margin: -7rem -3rem; }
     iframe_h {
@@ -316,7 +304,7 @@ header {
   header .logo__img {
     border-radius: 100%;
     margin: 30px 0px 0px 30px;
-    left: 80px; }
+    left: 5rem; }
   header .titulo {
     display: inline-block;
     position: relative;
@@ -334,8 +322,8 @@ header {
       font-family: "Courier New", Courier, monospace;
       color: white;
       font-size: 0.9em;
-      left: 14rem;
-      bottom: -2.5rem; }
+      left: 34rem;
+      bottom: 3.5rem; }
   header .menu li {
     font-size: 0.9em;
     display: flex;
@@ -384,7 +372,7 @@ main .principal__parrafo {
     background-color: #242e30; }
 
 main .video__parrafo {
-  margin-left: 24rem;
+  margin-left: 29rem;
   margin-top: -10rem; }
 
 main .video__hole {
@@ -392,7 +380,7 @@ main .video__hole {
   margin-top: 6rem; }
 
 main .texto {
-  margin-left: 31rem; }
+  margin-left: 40rem; }
 
 main .suscribe a {
   display: flex;
@@ -417,19 +405,20 @@ main .suscribe a {
   text-align: center;
   margin-top: 2rem; }
 
-.galeria img {
-  object-fit: cover;
-  margin: 6px 6px 6px 6px;
-  position: relative;
-  transition: all 2s; }
-  .galeria img:hover {
-    width: 410px;
-    height: 240px; }
-
-.galeria [title] {
-  font-family: "Courier New", Courier, monospace;
-  color: #242e30;
-  border-radius: 5px; }
+.galeria {
+  margin-left: 13rem; }
+  .galeria img {
+    object-fit: cover;
+    margin: 6px 6px 6px 6px;
+    position: relative;
+    transition: all 2s; }
+    .galeria img:hover {
+      width: 410px;
+      height: 240px; }
+  .galeria [title] {
+    font-family: "Courier New", Courier, monospace;
+    color: #242e30;
+    border-radius: 5px; }
 
 /*NOSOTROS*/
 main .titulo {
@@ -508,12 +497,13 @@ footer {
   filter: opacity(70%); }
   footer .foot__img {
     border-radius: 100%;
-    margin: 5px 50px 0px 180px; }
+    margin: 0 11rem; }
   footer .derechos__p {
     color: white;
-    margin: 0px 10px 20px 94px;
+    margin: 0 7rem;
     font-family: monospace;
-    font-weight: lighter; }
+    font-weight: lighter;
+    font-size: .8em; }
   footer .redes {
     display: inline-block;
     position: relative;
@@ -522,7 +512,7 @@ footer {
       font-family: Verdana, Geneva, Tahoma, sans-serif;
       font-size: 1em;
       color: white;
-      margin: 60px 10px 10px 380px; }
+      margin: 3rem 1rem; }
     footer .redes__li--img1 {
       margin: 0px 10px; }
     footer .redes__li--img2 {

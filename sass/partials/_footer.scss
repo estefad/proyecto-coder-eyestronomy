@@ -8,14 +8,15 @@ footer{
 
     .foot__img{
         border-radius: 100%;
-        margin: 5px 50px 0px 180px;
+        margin: 0 11rem;
     }
 
     .derechos__p{
         color: $secondary;
-        margin: 0px 10px 20px 94px;
+        margin: 0 7rem;
         font-family: $font-one;
         font-weight: lighter;
+        font-size: .8em;
     }
 
     .redes{
@@ -27,7 +28,7 @@ footer{
             font-family: $font-three;
             font-size: 1em;
             color: $secondary;
-            margin: 60px 10px 10px 380px;
+            margin: 3rem 1rem;
         }
         
         &__li--img1{
