@@ -107,7 +107,7 @@ li a {
     min-width: 320px;
     height: 100vh;
     grid-template-columns: 1fr;
-    grid-template-rows: 25vh 1fr 20vh;
+    grid-template-rows: 25vh 1fr 16vh;
     grid-template-areas: "header" "main" "footer";
     padding: 0;
     /*HEADER*/
@@ -154,7 +154,8 @@ li a {
       margin-top: -0.3rem; }
     body .navbar-light .navbar-toggler {
       width: 35px;
-      height: 30px; }
+      height: 30px;
+      background-color: white; }
     body .navbar > .container-fluid {
       margin-top: -3rem; }
     body .navbar-nav {
@@ -163,10 +164,13 @@ li a {
       max-width: 320px;
       /*NOSOTROS*/ }
       body main #intro-p {
-        margin-top: 4rem; }
+        margin-top: 4rem;
+        font-size: .7em; }
       body main .intro p {
-        font-size: .7em;
+        font-size: 1em;
         margin-top: 4rem; }
+      body main .intro .ciencia {
+        margin-bottom: 6rem; }
       body main .imagen .principal__img {
         width: 320px;
         height: 160px;
@@ -200,17 +204,17 @@ li a {
         margin: 2rem 4rem;
         font-size: .5em; }
       body main .video__parrafo {
-        margin-top: -4rem;
+        margin-top: 1rem;
         margin-bottom: 2rem; }
       body main .video__hole {
-        margin-left: 3rem;
+        margin-left: -1.7rem;
         margin-top: 9rem; }
         body main .video__hole_h {
           margin: 0; }
       body main .texto {
-        margin-left: 1rem;
-        margin-right: 1rem;
-        margin-top: 8rem; }
+        margin-left: -4rem;
+        margin-right: -4rem;
+        margin-top: 6rem; }
       body main .nosotros {
         display: flex;
         width: 80%;
@@ -221,6 +225,8 @@ li a {
       body main .titulo {
         font-size: 1em;
         margin-top: 4rem; }
+      body main .nos {
+        margin-top: 6rem; }
     body footer {
       display: flex;
       align-items: center;
@@ -252,7 +258,7 @@ li a {
           height: 15px; }
     body .contacto {
       min-width: 200px;
-      margin: -3rem 3rem; }
+      margin: -3rem 2rem; }
       body .contacto .check type[checkbox] {
         margin-left: 12rem; }
     body .p {
@@ -286,14 +292,14 @@ li a {
   iframe {
     width: 312px;
     height: 215px;
-    margin: -7rem -3rem; }
+    margin: -5rem -3rem; }
     iframe_h {
       margin: -8rem -8rem; } }
 
 .video {
   display: flex;
   justify-content: center;
-  margin: 12rem auto; }
+  margin: 6rem auto; }
 
 /*HEADER*/
 header {
@@ -372,15 +378,21 @@ main .principal__parrafo {
     background-color: #242e30; }
 
 main .video__parrafo {
-  margin-left: 29rem;
-  margin-top: -10rem; }
+  margin-left: 20rem;
+  margin-right: 20rem;
+  margin-top: -4rem; }
+
+main .inicio {
+  margin: 5rem; }
 
 main .video__hole {
   margin-left: 9rem;
   margin-top: 6rem; }
 
 main .texto {
-  margin-left: 40rem; }
+  margin-left: 20rem;
+  margin-right: -12rem;
+  margin-top: -15rem; }
 
 main .suscribe a {
   display: flex;

@@ -5,7 +5,7 @@
         min-width: 320px;
         height: 100vh;
         grid-template-columns: 1fr;
-        grid-template-rows: 25vh 1fr 20vh;
+        grid-template-rows: 25vh 1fr 16vh;
         grid-template-areas: 
         "header"
         "main"
@@ -75,6 +75,7 @@
         .navbar-light .navbar-toggler {
             width: 35px;
             height: 30px;
+            background-color: white;
         }
 
         .navbar>.container-fluid {
@@ -91,11 +92,16 @@
 
             #intro-p{
                 margin-top: 4rem;
+                font-size: .7em;
             }
         
             .intro p{
-                font-size: .7em;
+                font-size: 1em;
                 margin-top: 4rem;
+            }
+
+            .intro .ciencia{
+                margin-bottom: 6rem;
             }
             
             .imagen .principal__img{
@@ -150,12 +156,12 @@
             }
 
             .video__parrafo{
-                margin-top: -4rem;
+                margin-top: 1rem;
                 margin-bottom: 2rem;
             } 
 
             .video__hole{
-                margin-left: 3rem;
+                margin-left: -1.7rem;
                 margin-top: 9rem;
 
                 &_h{
@@ -164,9 +170,9 @@
             }
 
             .texto{
-                margin-left: 1rem;
-                margin-right: 1rem;
-                margin-top: 8rem;
+                margin-left: -4rem;
+                margin-right: -4rem;
+                margin-top: 6rem;
             }
 
             /*NOSOTROS*/
@@ -185,6 +191,10 @@
             .titulo{
                 font-size: 1em;
                 margin-top: 4rem;
+            }
+
+            .nos{
+                margin-top: 6rem
             }
         }
 
@@ -246,7 +256,7 @@
         
         .contacto{
             min-width: 200px;
-            margin: -3rem 3rem;
+            margin: -3rem 2rem;
 
             & .check type[checkbox]{
                 margin-left: 12rem;
@@ -310,7 +320,7 @@
     iframe{
         width: 312px;
         height: 215px;
-        margin: -7rem -3rem;
+        margin: -5rem -3rem;
 
         &_h{
             margin: -8rem -8rem;
