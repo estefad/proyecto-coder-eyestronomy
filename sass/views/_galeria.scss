@@ -1,13 +1,38 @@
 /*GALERIA*/
 
 .galeria__titulo{
-    font-size: 1.5em;
+    
     font-family: $font-one;
     color: $secondary;
     text-align: center;
     margin-top: 2rem;
 }
 
+.galeria__titulo1{
+    
+    font-family: $font-one;
+    color: $secondary;
+    text-align: center;
+    margin-top: 4rem;
+}
+.gale{
+    width: 80%;
+    margin: 2rem 12rem ;
+}
+
+.galeria1{
+    
+    & img{
+        margin: 10px 10px 10px 10px;
+        position: relative;
+        transition: all 2s;
+        &:hover{
+            width: 280px;
+            height: 270px;
+        }
+    }
+
+}
 .galeria{
     margin-left: 13rem;
     & img{
@@ -16,8 +41,8 @@
         position: relative;
         transition: all 2s;
         &:hover{
-            width: 410px;
-            height: 240px;
+            width: 420px;
+            height: 250px;
         }
     
     }
@@ -28,4 +53,3 @@
         border-radius: 5px;
     }
 }
-

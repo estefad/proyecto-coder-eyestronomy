@@ -33,14 +33,20 @@ footer{
         
         &__li--img1{
             margin: 0px 10px;
+            background-color: $secondary;
+            border-radius: 5px;
         }
         
         &__li--img2{
             margin: 0px 10px;
+            background-color: $secondary;
+            border-radius: 8px;
         }
         
         &__li--img3{
             margin: 0px 10px;
+            background-color: $secondary;
+            border-radius: 4px;
         }
     }
 }

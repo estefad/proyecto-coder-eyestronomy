@@ -159,7 +159,8 @@ li a {
     body .navbar > .container-fluid {
       margin-top: -3rem; }
     body .navbar-nav {
-      font-size: .9em; }
+      font-size: .9em;
+      margin-left: .4rem; }
     body main {
       max-width: 320px;
       /*NOSOTROS*/ }
@@ -179,7 +180,7 @@ li a {
       body main .principal__parrafo {
         display: block;
         text-align: center;
-        font-size: .6em;
+        font-size: .7em;
         margin: .3rem; }
       body main .row__imagenes {
         width: 320px; }
@@ -245,17 +246,17 @@ li a {
         display: flex;
         justify-content: center; }
         body footer .redes__li, body footer .redes__li--img2, body footer .redes__li--img3 {
-          margin: 5px 0px 0px 5px;
-          width: 15px;
-          height: 15px; }
+          margin: 5px 0px 0px 10px;
+          width: 18px;
+          height: 18px; }
         body footer .redes__titulo {
           font-size: .6em;
           margin: 12px -31px 0px 4px; }
         body footer .redes__li--img1 {
           /* Arriba | Derecha | Abajo | Izquierda */
           margin: 5px 0px 0px 10px;
-          width: 15px;
-          height: 15px; }
+          width: 18px;
+          height: 18px; }
     body .contacto {
       min-width: 200px;
       margin: -3rem 2rem; }
@@ -288,6 +289,14 @@ li a {
     body .galeria img:hover {
       width: 250px;
       height: 150px; }
+    body .gale {
+      margin: 4.5rem; }
+    body .galeria1 img {
+      width: 140px;
+      height: 140px; }
+    body .galeria1 img:hover {
+      width: 170px;
+      height: 170px; }
   /*CIENCIA*/
   iframe {
     width: 312px;
@@ -390,8 +399,8 @@ main .video__hole {
   margin-top: 6rem; }
 
 main .texto {
-  margin-left: 20rem;
-  margin-right: -12rem;
+  margin-left: 39rem;
+  margin-right: 9rem;
   margin-top: -15rem; }
 
 main .suscribe a {
@@ -411,11 +420,28 @@ main .suscribe a {
 
 /*GALERIA*/
 .galeria__titulo {
-  font-size: 1.5em;
   font-family: monospace;
   color: white;
   text-align: center;
   margin-top: 2rem; }
+
+.galeria__titulo1 {
+  font-family: monospace;
+  color: white;
+  text-align: center;
+  margin-top: 4rem; }
+
+.gale {
+  width: 80%;
+  margin: 2rem 12rem; }
+
+.galeria1 img {
+  margin: 10px 10px 10px 10px;
+  position: relative;
+  transition: all 2s; }
+  .galeria1 img:hover {
+    width: 280px;
+    height: 270px; }
 
 .galeria {
   margin-left: 13rem; }
@@ -425,8 +451,8 @@ main .suscribe a {
     position: relative;
     transition: all 2s; }
     .galeria img:hover {
-      width: 410px;
-      height: 240px; }
+      width: 420px;
+      height: 250px; }
   .galeria [title] {
     font-family: "Courier New", Courier, monospace;
     color: #242e30;
@@ -526,8 +552,14 @@ footer {
       color: white;
       margin: 3rem 1rem; }
     footer .redes__li--img1 {
-      margin: 0px 10px; }
+      margin: 0px 10px;
+      background-color: white;
+      border-radius: 5px; }
     footer .redes__li--img2 {
-      margin: 0px 10px; }
+      margin: 0px 10px;
+      background-color: white;
+      border-radius: 8px; }
     footer .redes__li--img3 {
-      margin: 0px 10px; }
+      margin: 0px 10px;
+      background-color: white;
+      border-radius: 4px; }
