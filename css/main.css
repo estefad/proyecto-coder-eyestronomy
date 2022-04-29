@@ -165,11 +165,11 @@ li a {
       max-width: 320px;
       /*NOSOTROS*/ }
       body main #intro-p {
-        margin-top: 4rem;
+        margin-top: 6rem;
         font-size: .7em; }
       body main .intro p {
         font-size: 1em;
-        margin-top: 4rem; }
+        margin-top: 6rem; }
       body main .intro .ciencia {
         margin-bottom: 6rem; }
       body main .imagen .principal__img {
@@ -180,7 +180,7 @@ li a {
       body main .principal__parrafo {
         display: block;
         text-align: center;
-        font-size: .7em;
+        font-size: .8em;
         margin: .3rem; }
       body main .row__imagenes {
         width: 320px; }
@@ -306,6 +306,39 @@ li a {
     margin: -5rem -3rem; }
     iframe_h {
       margin: -8rem -8rem; } }
+
+@media (max-width: 1200px) and (orientation: landscape) {
+  body {
+    display: grid;
+    min-width: 320px;
+    height: 100vh;
+    grid-template-columns: 1fr;
+    grid-template-rows: 40vh 1fr 38vh;
+    grid-template-areas: "header" "main" "footer";
+    padding: 0; }
+    body #intro-p {
+      margin-top: 4rem;
+      font-size: 1em; }
+    body header .titulo {
+      margin-top: .3rem; }
+      body header .titulo__parrafo {
+        display: none; }
+    body header .navbar > .container-fluid {
+      margin-top: -6rem; }
+    body header .navbar-light .navbar-toggler-icon {
+      width: 20px;
+      margin-left: -0.3rem;
+      margin-top: -0.3rem; }
+    body header .navbar-light .navbar-toggler {
+      width: 35px;
+      height: 30px;
+      background-color: white;
+      margin-left: 30rem;
+      margin-top: -5rem; }
+    body header .navbar-light .navbar-brand {
+      display: none; }
+    body header .navbar-nav {
+      margin-left: -17rem; } }
 
 .video {
   display: flex;
