@@ -405,13 +405,127 @@
             }
 
             .navbar-nav {
-                margin-left: -17rem;
+                margin-left: 2rem;
             }
     
         }
+
         
+        main{
+            .imagen .principal__img{
+                width: 420px;
+                height: 260px;
+                left: 3rem;
+                padding: .3rem;
+            }
         
-    
+            .principal__parrafo{
+                display:block;
+                text-align: center;
+                font-size: .8em;
+                margin: .3rem;
+            }
+        
+            .row__imagenes{
+                width: 320px;
+
+                .imagenes__1{
+                    width: map-get($width, big);
+                    height: map-get($heigth, small-3);
+                }
+                
+                .imagenes__2{
+                    width: map-get($width, big);
+                    height: map-get($heigth, small-3);
+                }
+                
+                .imagenes__3{
+                    width: map-get($width, small-3);
+                    height: map-get($heigth, big);    
+                }
+                
+                .imagenes__4{
+                    width: map-get($width, small-3);
+                    height: 180px;   
+                }
+                
+            }
+            
+            .suscribe{
+                margin: 0;
+            }
+        
+            .suscribe a{
+                max-width: 60%;
+                justify-content: center;
+                padding: .5rem; 
+                margin: 2rem 11rem;
+                font-size: .7em;
+            }
+
+            .video__parrafo{
+                margin-top: 1rem;
+                margin-bottom: 2rem;
+            } 
+
+            .video__hole{
+                margin-left: -1.7rem;
+                margin-top: 9rem;
+
+                &_h{
+                    margin: 0;
+                }
+            }
+
+            .texto{
+                margin-left: -4rem;
+                margin-right: -4rem;
+                margin-top: 6rem;
+            }
+
+            /*NOSOTROS*/
+
+            .nosotros{
+                display: flex;
+                width: 80%;
+                margin-left: 2.5rem;
+
+                .nosotros__parrafo{
+                    font-size: .9em;
+                    text-align: justify;
+                    margin-left: 5rem;
+                }
+            }
+        
+            .titulo{
+                font-size: 1em;
+                margin-top: 4rem;
+            }
+
+            .nos{
+                margin-top: 6rem
+            }
+
+            iframe{
+                margin-left: 5rem;
+            }
+
+            .video{
+                margin-left: -5rem;
+            }
+        }
+
+        footer{
+            .redes{
+                &__titulo{
+                    margin: 6rem -2rem;
+                }
+            }
+        }
+        
+        .gale{
+            margin: 2rem 10rem ;
+        }
     }
 }
 

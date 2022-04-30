@@ -338,7 +338,74 @@ li a {
     body header .navbar-light .navbar-brand {
       display: none; }
     body header .navbar-nav {
-      margin-left: -17rem; } }
+      margin-left: 2rem; }
+    body main {
+      /*NOSOTROS*/ }
+      body main .imagen .principal__img {
+        width: 420px;
+        height: 260px;
+        left: 3rem;
+        padding: .3rem; }
+      body main .principal__parrafo {
+        display: block;
+        text-align: center;
+        font-size: .8em;
+        margin: .3rem; }
+      body main .row__imagenes {
+        width: 320px; }
+        body main .row__imagenes .imagenes__1 {
+          width: 150px;
+          height: 100px; }
+        body main .row__imagenes .imagenes__2 {
+          width: 150px;
+          height: 100px; }
+        body main .row__imagenes .imagenes__3 {
+          width: 120px;
+          height: 150px; }
+        body main .row__imagenes .imagenes__4 {
+          width: 120px;
+          height: 180px; }
+      body main .suscribe {
+        margin: 0; }
+      body main .suscribe a {
+        max-width: 60%;
+        justify-content: center;
+        padding: .5rem;
+        margin: 2rem 11rem;
+        font-size: .7em; }
+      body main .video__parrafo {
+        margin-top: 1rem;
+        margin-bottom: 2rem; }
+      body main .video__hole {
+        margin-left: -1.7rem;
+        margin-top: 9rem; }
+        body main .video__hole_h {
+          margin: 0; }
+      body main .texto {
+        margin-left: -4rem;
+        margin-right: -4rem;
+        margin-top: 6rem; }
+      body main .nosotros {
+        display: flex;
+        width: 80%;
+        margin-left: 2.5rem; }
+        body main .nosotros .nosotros__parrafo {
+          font-size: .9em;
+          text-align: justify;
+          margin-left: 5rem; }
+      body main .titulo {
+        font-size: 1em;
+        margin-top: 4rem; }
+      body main .nos {
+        margin-top: 6rem; }
+      body main iframe {
+        margin-left: 5rem; }
+      body main .video {
+        margin-left: -5rem; }
+    body footer .redes__titulo {
+      margin: 6rem -2rem; }
+    body .gale {
+      margin: 2rem 10rem; } }
 
 .video {
   display: flex;
